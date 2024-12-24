@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design de site de portfólio responsivo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    
+    <!-- deslizador css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- ícones de caixa -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- css personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portfólio</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#serviços">Serviços</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Olá, eu sou</h3>
+            <h1>Genival Paulino</h1>
+            <p>
+                Sou um desenvolvedor web que adora criar sites bonitos e funcionais
+                para pessoas que querem fazer a diferença no mundo.
+            </p>
+            <p>Atualmente estou Trabalhando como Desenvolvedor Web Freelancer. Linguagem HTML, CSS e JavaScript</p>
+
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <a href="pdf/Genival Paulino .pdf" class="btn">Download CV</a>
+        </div>
+
+        <div class="profissao-container">
+            <div class="profissao-box">
+                <div class="profissao" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Desenvolvedor Web</h3>
+                </div>
+                <div class="profissao" style="--i:1;">
+                    <i class='bx bx-camera'></i>
+                    <h3>Fotógrafo</h3>
+                </div>
+                <div class="profissao" style="--i:2;">
+                    <i class='bx bx-palette'></i>
+                    <h3>Web Designer</h3>
+                </div>
+                <div class="profissao" style="--i:3;">
+                    <i class='bx bx-video-recording'></i>
+                    <h3>Videógrafo</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="images/home.png" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="sobre" id="sobre">
+        <div class="sobre-img">
+            <img src="images/sobre.png" alt="">
+        </div>
+
+        <div class="sobre-content">
+            <h2 class="heading">Sobre <span>Mim</span></h2>
+            <h3>
+                Olá, bem-vindo ao meu site! Eu sou Genival, um desenvolvedor web que gosta de aprender novas tecnologias e resolver problemas com código
+            </h3>
+            <p>
+                Este site é meu blog pessoal onde escrevo sobre tópicos de desenvolvimento web
+                que me interessam e me inspiram.
+            </p>
+            <p>
+                Obrigado por visitar meu site e me conhecer melhor. Espero que você tenha
+                gostado de ler meus posts de blog e os tenha achado úteis e informativos. Se quiser ler mais dos meus posts, assine meu boletim informativo, onde envio
+                atualizações semanais sobre tendências e dicas de desenvolvimento web. Se tiver algum feedback ou sugestões, por favor, me avise. Eu adoraria ouvir de você.
+            </p>
+            <a href="#" class="btn">Leia mais</a>
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="serviços" id="serviços">
+        <h2 class="heading">Meu <span>Serviços</span></h2>
+
+        <div class="serviços-container">
+            <div class="serviços-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Desenvolvimento Web</h3>
+                <p>Um desenvolvedor front-end é responsável por criar a parte visual e interativa de websites e aplicativos, utilizando tecnologias como HTML, CSS e JavaScript para garantir uma experiência agradável e intuitiva para os usuários.</p>
+                <a href="#" class="btn">Leia mais</a>
+            </div>
+            <div class="serviços-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Design Gráfico</h3>
+                <p>Um Designer Gráfico é um profissional que utiliza elementos visuais para comunicar mensagens e criar projetos que atendem a uma variedade de necessidades. Aqui estão algumas das principais funções e responsabilidades de um Designer Gráfico:</p>
+                <a href="#" class="btn">Leia mais</a>
+            </div>
+            <div class="serviços-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Marketing Digital</h3>
+                <p>Marketing Digital é a promoção de produtos, serviços ou marcas por meio de canais digitais, como redes sociais, e-mails, mecanismos de busca e sites, utilizando estratégias e ferramentas online para atrair, engajar e converter consumidores.</p>
+                <a href="#" class="btn">Leia mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- design da seção de portfólio -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Mais recente <span>Projeto</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/portfolio1.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio2.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio3.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio4.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio5.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio6.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- design de depoimento -->
+    <div class="depoimento-container">
+        <h2 class="heading">De valor <span>Depoimento</span></h2>
+
+        <div class="depoimento-wrapper">
+            <div class="depoimento-box mySwiper">
+                <div class="depoimento-content swiper-wrapper">
+                    <div class="depoimento-slide swiper-slide">
+                        <img src="images/depoimento1.jpg" alt="">
+                        <h3>Henrique Cezar</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem dignissimos aliquid
+                            iure delectus corrupti impedit, beatae aperiam ad iusto nostrum possimus cum pariatur harum
+                            assumenda suscipit a, qui, tempora maxime nulla facere quo ipsum tempore. Atque libero
+                            provident ad aut officia pariatur voluptate quaerat delectus nesciunt, sequi eligendi
+                            aperiam fugit unde nihil, iste similique illum. Dignissimos enim officia consequuntur
+                            dolores.</p>
+                    </div>
+                    <div class="depoimento-slide swiper-slide">
+                        <img src="images/depoimento2.jpg" alt="">
+                        <h3>Flora Oceano</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem dignissimos aliquid
+                            iure delectus corrupti impedit, beatae aperiam ad iusto nostrum possimus cum pariatur harum
+                            assumenda suscipit a, qui, tempora maxime nulla facere quo ipsum tempore. Atque libero
+                            provident ad aut officia pariatur voluptate quaerat delectus nesciunt, sequi eligendi
+                            aperiam fugit unde nihil, iste similique illum. Dignissimos enim officia consequuntur
+                            dolores.</p>
+                    </div>
+                    <div class="depoimento-slide swiper-slide">
+                        <img src="images/depoimento3.jpg" alt="">
+                        <h3>Heloisa de Queiroz</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem dignissimos aliquid
+                            iure delectus corrupti impedit, beatae aperiam ad iusto nostrum possimus cum pariatur harum
+                            assumenda suscipit a, qui, tempora maxime nulla facere quo ipsum tempore. Atque libero
+                            provident ad aut officia pariatur voluptate quaerat delectus nesciunt, sequi eligendi
+                            aperiam fugit unde nihil, iste similique illum. Dignissimos enim officia consequuntur
+                            dolores.</p>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- design da seção de contato -->
+    <section class="contato" id="contato">
+        <h2 class="heading">Meu <span>Contato!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Nome completo">
+                <input type="email" placeholder="Endereço de email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Número de telefone">
+                <input type="text" placeholder="Assunto do e-mail">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+            <input type="submit" value="Enviar mensagem" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright © 2023 | Todos os direitos reservados.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    <!-- revelar rolagem -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
